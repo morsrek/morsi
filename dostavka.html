@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="styles/css/style.css" />
+<title>morsi</title>
+<script type="text/javascript">
+    function ValidMail() {
+     let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+     let myMail = document.getElementById('email').value;
+     let valid = re.test(myMail);
+     if (valid) alert('Вы успешно подписались на рассылку!');
+     else alert('Адрес электронной почты введен неправильно!');
+     document.getElementById('message').innerHTML = output;
+     return valid;
+    }
+</script>
+</head>
+<body class="body">
+    <div class="header">
+        <div class="wrapper">
+            <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+            <label for="checkbox" class="wrapper__button">
+                <span class="wrapper__button-line"></span>
+                <span class="wrapper__button-line"></span>
+                <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu">
+                <a href="tovarNew.html" class="wrapper__menu-link">Новинки</a>
+                <a href="tovarVerh.html" class="wrapper__menu-link">Верхняя одежда</a>
+                <a href="tovarNiz.html" class="wrapper__menu-link">Джинсы, брюки</a>
+                <a href="tovarAcses.html" class="wrapper__menu-link">Аксессуары</a>
+                <a href="tovarVse.html" class="wrapper__menu-link">Все товары</a>
+            </div>
+        </div>
+        <a class="textMenu" href="index.html">Morsi</a>
+        <button class="cart" id="cart">
+            <img class="cart__image" src="styles/images/header/korz1.png" alt="Cart" srcset="" />
+            <div class="cart__num" id="cart_num">0</div>
+            <script src="./scripts/main.js"></script>
+          </button>
+        <a href="#"><img class="like" src="styles/images/header/like1.png"></a>
+    </div>
+    <div class="mainM">
+        <center><h1>Доставка</h1></center>
+        <ul>
+            <li><a class="textM">Мы стремимся доставлять все заказы в соответствии с расчетными сроками доставки.</a></li>
+            <li><a class="textM">Пожалуйста, убедитесь, что выбранный вами адрес доставки верен, поскольку мы не сможем изменить его после размещения вашего заказа.</a></li>
+            <li><a class="textM">Мы также не можем осуществлять доставку по адресам переадресации или почтовым ящикам.</a></li>
+            <li><a class="textM">Обратите внимание: из-за законодательства о Брексите мы не можем доставлять аксессуары в Германию и Испанию.</a></li>
+        </ul>
+    </div>  
+    <div class="footer">
+        <div class="information"><a class="footerZag">Информация</a>
+            <ul class="inf">
+                <ul class="inf">
+                    <li class="inf"><a href="contactUs.html">Связаться с нами</a></li>
+                    <li class="inf"><a href="dostavka.html">Доставка</a></li>
+                    <li class="inf"><a href="otsled.html">Отслеживание</a></li>
+                    <li class="inf"><a href="helpRazmer.html">Помощь с размерами</a></li>
+                    <li class="inf"><a href="skidki.html">Скидочная карта</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="policy"><a class="footerZag">Политика компании</a>
+            <ul class="pol">
+                <li class="pol">Приватность</li>
+                <li class="pol">Условия использования</li>
+                <li class="pol">Файлы cookies</li>
+            </ul>
+        </div>
+        <div class="follow"><a class="footerZag">Следите за нами</a>
+            <ul class="fol">
+                <li class="fol">Instagram</li>
+                <li class="fol">Youtube</li>
+                <li class="fol">TikTok</li>
+                <li class="fol">Telegram</li>
+                <li class="fol">VK</li>
+            </ul>
+        </div>
+        <div class="news"><a class="footerZag">Подписка на новости</a>
+            <ul class="fol">
+                <li class="fol">Вы будете получать сообщения на свою почту, когда будут выходить новые коллекции</li>
+                <li>
+                    <div class="emal">
+                        <input id="email" name="email" type="text" placeholder="primer@gmail.ru" />
+                        <input class="EMbut" name="button" type="submit" value="Подписаться" onClick="ValidMail();" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="fotText">© 2024 Morsi |</a><a class="fotText1">Terms of Use</a><a class="fotText2">Privacy Policy</a><a class="fotText3">Cookies Policy</a>
+    </div>
+</body>
+</html>
